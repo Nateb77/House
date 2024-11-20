@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #87CEEB; /* Light blue sky */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* House container */
+.house {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+/* Base Rectangle for the house */
+.rect.base {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 150px;
+  background-color: #8B4513; /* Brown for the house body */
+}
+
+/* Door rectangle */
+.rect.door {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  width: 40px;
+  height: 70px;
+  background-color: #654321; /* Dark brown for the door */
+}
+
+/* Left Window rectangle */
+.rect.window-left {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ADD8E6; /* Light blue for the window */
+}
+
+/* Right Window rectangle */
+.rect.window-right {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ADD8E6; /* Light blue for the window */
+}
+
+/* Left Triangle for the roof */
+.triangle.roof-left {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 40px solid #8B0000; /* Dark red roof */
+}
+
+/* Right Triangle for the roof */
+.triangle.roof-right {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 40px solid #8B0000; /* Dark red roof */
+}
+
+/* Oval for the chimney */
+.oval.chimney {
+  position: absolute;
+  top: -70px;
+  left: 120px;
+  width: 30px;
+  height: 50px;
+  background-color: #A9A9A9; /* Gray for the chimney */
+  border-radius: 50%;
+}
+
+/* Trapezoid for the roof */
+.trapezoid.roof {
+  position: absolute;
+  top: -80px;
+  left: 10px;
+  width: 180px;
+  height: 60px;
+  background-color: #8B0000; /* Dark red roof */
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%); /* Trapezoid shape */
+}
